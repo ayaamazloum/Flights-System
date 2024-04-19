@@ -1,0 +1,27 @@
+.flightstracking {
+  background-image: url(../assets/images/flightstracking-bs.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 90vh;
+}
+.table-container{
+    align-items: center;
+    padding-top: 20px;
+
+}
+.flightstracking table {
+  border-collapse: collapse;
+  width: 80%;
+  color: white;
+  margin-top: 20px;
+}
+.flightstracking th,
+td {
+    background-color: #32a7b1;
+    border: 1px solid white;
+  padding: 8px;
+  text-align: left;
+}
+

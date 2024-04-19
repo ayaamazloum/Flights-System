@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/icons/Vector.png" />
+    <link rel="stylesheet" href="../styles/common/utilities.css" />
+    <link rel="stylesheet" href="../styles/common/common.css" />
+    <link rel="stylesheet" href="../styles/admin.css" />
+    <title>Flights Managment</title>
+  </head>
+  <body>
+    <header class="header flex row center">
+      <div class="adminnav-links flex gap-110">
+        <a href="./admin.html">Dashboard</a>
+        <a class="bold" href="#">Flights Managment</a>
+        <a href="./booking-financial.html">Booking & Financial</a>
+        <a href="./coin-requests.html">Coin Requests</a>
+        <a href="./reviews-ratings.html">Reviews & Ratings</a>
+        <a href="./admin-chat.html">Chats</a>
+        <a class="primary-text" href="#">Logout</a>
+      </div>
+
+      <img
+        class="menu-icon burger"
+        id="open-nav-btn"
+        src="../assets/icons/menu.png"
+      />
+      <img
+        class="menu-icon close"
+        id="close-nav-btn"
+        src="../assets/icons/close.png"
+      />
+    </header>
+
+    <div class="flights-container column center">
+      <form class="pop-up-add-flight flex column hidden" id="popup">
+        <div class="flex center space-between">
+          <label>Departure date:</label>
+          <input type="date" />
+        </div>
+        <div class="flex center space-between">
+          <label>Return date:</label>
+          <input type="date" />
+        </div>
+        <div class="flex center space-between">
+          <label>Departure time:</label>
+          <input type="time" />
+        </div>
+        <div class="flex center space-between">
+          <label>Arrival time:</label>
+          <input type="time" />
+        </div>
+        <div class="flex center space-between">
+          <label>Departure air-port:</label>
+          <select id="departureSelect">
+
+          </select>
+        </div>
+        <div class="flex center space-between">
+          <label>Arrival air-port:</label>
+          <select id="arrivalSelect">
+
+          </select>
+        </div>
+        <div class="flex center space-between">
+          <label>Plane:</label>
+          <select id="planeSelect">
+          </select>
+        </div>
+
+        <div class="flex space-between">
+          <input class="adminBtn" type="submit" value="Add Flight" />
+          <input class="adminBtn" type="submit" value="Close" />
+        </div>
+      </form>
+      <div class="flex center">
+        <button class="adminBtn" id="showhidden">Add Flight</button>
+      </div>
+
+      <div class="viewFlightsContainer flex center" id="viewFlightsContainer">
+        
+      </div>
+      <h4 class="hidden" id="no-flights">No flights.</h4>
+    </div>
+    <script src="../scripts/adminFlights.js"></script>
+  </body>
+</html>

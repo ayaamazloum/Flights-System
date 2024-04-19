@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyNow</title>
+    <link rel="icon" href="../assets/icons/Vector.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/common/utilities.css">
+    <link rel="stylesheet" href="../styles/common/common.css">
+    <link rel="stylesheet" href="../styles/flights.css">
+</head>
+<body>
+    <header class="header flex row center">
+        <img class="header-logo" src="../assets/icons/Logo.png" alt="FlyNow Logo"/>
+
+        <div class="nav-links flex gap-30" id="nav-links">
+            <a href="../index.html">Home</a>
+            <a class="bold" href="../pages/flights.html">Flights</a>
+            <a href="../pages/flightstracking.html">Flights Tracker</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="../pages/profile.html">Profile</a>
+            <a class="primary-text" id="logout-btn">Logout</a>
+        </div>
+
+        <img class="menu-icon burger" id="open-nav-btn" src="../assets/icons/menu.png"/>
+        <img class="menu-icon close" id="close-nav-btn" src="../assets/icons/close.png"/>
+    </header>
+
+    <main>
+        <h1>Our Available Flights</h1>
+        
+        <section class="flight-search flex row center gap-20">
+            <div class="search-field">
+                <label for="departure">Departure Country</label>
+                <fieldset>
+                    <select name="departure-country" id="departure-country">
+                        <option value="any">Any</option>
+                    </select>
+                    <img class="input-icon" src="../assets/icons/departure.svg"/>
+                </fieldset>
+            </div>
+            
+            <div class="search-field">
+                <label for="destination">Destination Country</label>
+                <fieldset>
+                    <select name="departure-country" id="destination-country">
+                        <option value="any">Any</option>
+                    </select>
+                    <img class="input-icon" src="../assets/icons/destination.svg"/>
+                </fieldset>
+            </div>
+            
+            <div class="search-field">
+                <label for="departure-date">Departure Date</label>
+                <fieldset>
+                    <input class="datepicker" type="date" name="departure-date" id="departure-date"/>
+                    <img class="input-icon" src="../assets/icons/date.svg"/>
+                </fieldset>
+            </div>
+            
+            <div class="search-field">
+                <label for="return-date">Return Date</label>
+                <fieldset>
+                    <input class="datepicker" type="date" name="return-date" id="return-date"/>
+                    <img class="input-icon" src="../assets/icons/date.svg"/>
+                </fieldset>
+            </div>
+            
+            <div class="search-field">
+                <label for="num-passengers">Passengers</label>
+                <fieldset>
+                    <input class="num-input" type="number" name="num-passengers" value="1" id="num-passengers"/>
+                    <img class="input-icon" src="../assets/icons/passenger.svg"/>
+                </fieldset>
+            </div>
+
+            <button class="btn-style-2 search-btn flex row center gap-10" id="search-btn"><img src="../assets/icons/search.svg"/>Find Flights</button>
+        </section>
+
+        <section class="flights-section flex column center gap-10">
+            <div class="flights-container flex row center gap-30" id="flights-container">
+                
+            </div>
+            <h4 class="hidden" id="no-flights">Sorry, no matching flights.</h4>
+        </section>
+    </main>
+    
+    <footer class="footer flex column gap-10">
+        <div class="footer-top flex row">
+            <img src="../assets/icons/Logo.png" />
+            <div class="footer-links flex row gap-20">
+                <a href="../pages/flights.html">Flights</a>
+                <a href="../pages/flightstracking.html">Flights Tracker</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom flex row">
+            <div class="footer-rights flex row gap-20">
+                <p>© 2024 FlyNow</p>
+                <a href="#">Terms</a>
+                <a href="#">Policy</a>
+            </div>
+
+            <div class="footer-social flex row gap-20">
+                <a href="#"><img src="../assets/icons/facebook.svg" /></a>
+                <a href="#"><img src="../assets/icons/instagram.svg" /></a>
+                <a href="#"><img src="../assets/icons/twitter.svg" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/flights.js"></script>
+</body>
+</html>

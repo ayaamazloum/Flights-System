@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="icon" href="../assets/icons/Vector.png">
+    <link rel="stylesheet" href="../styles/common/utilities.css">
+    <link rel="stylesheet" href="../styles/common/common.css">
+    <link rel="stylesheet" href="../styles/login.css">
+</head>
+
+<body>
+    <div id="unfilled" class="unfilled flex center hidden">
+        <p>Please fill in all fields!</p>
+    </div>
+    <div id="loginContainer" class="login-container flex column center ">
+
+        <div class="flex center login-header">Login</div>
+        <form action="" class="flex column center form1">
+            <input id="loginEmail" class="form1-1" name="email" type="text" placeholder="Email" required>
+            <input id="loginPassword" class="form1-1" name="password" type="password" placeholder="Password" required>
+            <button id="loginBtn" class="btn-style-2 form1-3">Login</button>
+        </form>
+        <div class="login-to-signup flex center">
+            <p>Don’t have an account?</p>
+            <button id="loginToSignup"> Sign up </button>
+        </div>
+    </div>
+    <div id="signupContainer" class="signup-container flex column center hidden">
+
+        <div class="flex center login-header">Sign up</div>
+        <form action="" class="flex column center form1">
+            <input id="formName" class="form1-1" type="text" placeholder="Name" required>
+            <input id="formEmail" class="form1-1" type="text" placeholder="Email" required>
+            <input id="formPassword" class="form1-1" type="password" placeholder="Password" required>
+            <input id="formDate" class="form1-1" type="date" placeholder="" required>
+            <select id="formGender" name="gender" class="form1-2" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input id="formPhone" class="form1-1" type="text" placeholder="Phone number" required>
+            <button id="signupBtn" class="btn-style-2 form1-3">Sign up</button>
+        </form>
+        <div class="login-to-signup flex center">
+            <p>Already have an account?</p>
+            <button id="signupToLogin"> Log in </button>
+        </div>
+    </div>
+    <footer class="footer flex column gap-10">
+        <div class="footer-top flex row">
+            <img src="../assets/icons/Logo.png" />
+            <div class="footer-links flex row gap-20">
+                <a href="../pages/flights.html">Flights</a>
+                <a href="../pages/flightstracking.html">Flights Tracker</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom flex row">
+            <div class="footer-rights flex row gap-20">
+                <p>© 2024 FlyNow</p>
+                <a href="#">Terms</a>
+                <a href="#">Policy</a>
+            </div>
+
+            <div class="footer-social flex row gap-20">
+                <a href="#"><img src="../assets/icons/facebook.svg" /></a>
+                <a href="#"><img src="../assets/icons/instagram.svg" /></a>
+                <a href="#"><img src="../assets/icons/twitter.svg" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <script src="../scripts/login.js"></script>
+</body>
+
+</html>

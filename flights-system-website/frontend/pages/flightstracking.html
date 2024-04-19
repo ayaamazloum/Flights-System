@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flights tracking</title>
+    <link rel="icon" href="../assets/icons/Vector.png">
+    <link rel="stylesheet" href="../styles/common/utilities.css">
+    <link rel="stylesheet" href="../styles/common/common.css">
+    <link rel="stylesheet" href="../styles/flightstracking.css">
+</head>
+
+<body>
+    <header class="header flex row center">
+        <img class="header-logo" src="../assets/icons/Logo.png" alt="FlyNow Logo"/>
+
+        <div class="nav-links flex gap-30" id="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../pages/flights.html">Flights</a>
+            <a class="bold" href="../pages/flightstracking.html">Flights Tracker</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a  href="../pages/profile.html">Profile</a>
+            <a class="primary-text" id="logout-btn">Logout</a>
+        </div>
+
+        <img class="menu-icon burger" id="open-nav-btn" src="../assets/icons/menu.png"/>
+        <img class="menu-icon close" id="close-nav-btn" src="../assets/icons/close.png"/>
+    </header>
+
+
+    <div class="flightstracking">
+        <div class="table-container flex column">
+            <h2>Flights tracking</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Flight</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Status</th>
+                        <th>Departure Date</th>
+                        <th>Arrival Date</th>
+                    </tr>
+                </thead>
+                <tbody id="flightsInfoContainer">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <footer class="footer flex column gap-10">
+        <div class="footer-top flex row">
+            <img src="../assets/icons/Logo.png" />
+            <div class="footer-links flex row gap-20">
+                <a href="../pages/flights.html">Flights</a>
+                <a href="../pages/flightstracking.html">Flights Tracker</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom flex row">
+            <div class="footer-rights flex row gap-20">
+                <p>© 2024 FlyNow</p>
+                <a href="#">Terms</a>
+                <a href="#">Policy</a>
+            </div>
+
+            <div class="footer-social flex row gap-20">
+                <a href="#"><img src="../assets/icons/facebook.svg" /></a>
+                <a href="#"><img src="../assets/icons/instagram.svg" /></a>
+                <a href="#"><img src="../assets/icons/twitter.svg" /></a>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/flightstracking.js"></script>
+</body>
+
+</html>

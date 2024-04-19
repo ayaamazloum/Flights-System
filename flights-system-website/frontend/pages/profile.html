@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile page</title>
+    <link rel="icon" href="../assets/icons/Vector.png">
+    <link rel="stylesheet" href="../styles/common/utilities.css">
+    <link rel="stylesheet" href="../styles/common/common.css">
+    <link rel="stylesheet" href="../styles/profile.css">
+</head>
+
+<body>
+    <header class="header flex row center">
+        <img class="header-logo" src="../assets/icons/Logo.png" alt="FlyNow Logo"/>
+
+        <div class="nav-links flex gap-30" id="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../pages/flights.html">Flights</a>
+            <a href="../pages/flightstracking.html">Flights Tracker</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a class="bold" href="../pages/profile.html">Profile</a>
+            <a class="primary-text" id="logout-btn">Logout</a>
+        </div>
+
+        <img class="menu-icon burger" id="open-nav-btn" src="../assets/icons/menu.png"/>
+        <img class="menu-icon close" id="close-nav-btn" src="../assets/icons/close.png"/>
+    </header>
+    <div class="flex profile-section1 ">
+        <div class="coin-balance">Account balance: <p id="accountBalance">1000</p> </div>
+        <button id="requestCoinsBtn" class="btn-style-1">Request coins</button>
+    </div>
+    <div id="coinRequestForm" class="coin-request-container flex center hidden">
+        <form id="coin-request" action="" class="coin-request-form flex center column">
+            <p>Please enter the ammount of coins you want to request:</p>
+            <input class="coin-request-ammount" type="number" placeholder="coins">
+            <button id="submitRequest" class="btn-style-3">Submit request</button>
+        </form>
+    </div>
+    <div class="flex profile-section2">
+        <div class="info-section flex column">
+            <p class="bold">About</p>
+            <div id="name_info">Name</div>
+            <div class="flex">
+                <img class="profile-icon" src="../assets/icons/gender.png" alt="">
+                <p id="gender_info">Male</p>
+            </div>
+            <div class="flex">
+                <img class="profile-icon" src="../assets/icons/birthdate.png" alt="">
+                <p id="birthdate_info"> june</p>
+            </div>
+            <div class="flex">
+                <img class="profile-icon" src="../assets/icons/locationProfile.png" alt="">
+                <p id="location_info">leb</p>
+            </div>
+            <div class="flex">
+                <img class="profile-icon" src="../assets/icons/email.png" alt="">
+                <p id="email_info">email</p>
+            </div>
+            <div class="flex">
+                <img class="profile-icon" src="../assets/icons/phone.png" alt="">
+                <p id="phonenumber_info">phone</p>
+            </div>
+            <button id="editBtn" class="btn-style-3">Edit</button>
+        </div>
+        <form id="editForm" action="" class="flex column center form2 hidden">
+            <input id="editName" class="form1-1" type="text" placeholder="Name" >
+            <input id="editEmail" class="form1-1" type="text" placeholder="Email" >
+            <input id="editPassword" class="form1-1" type="password" placeholder="Password">
+            <input id="editDate" class="form1-1" type="date" placeholder="">
+            <select id="editGender" name="gender" class="form1-2">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input id="editPhone" class="form1-1" type="text" placeholder="Phone number">
+            <button id="saveEdit" class="btn-style-2 form1-3">Save</button>
+        </form>
+        <div id="bookingHistory" class="booking-history">
+            <div class="flex center">
+                <p class="bold booking-history-title">Booking history</p>
+            </div>
+            <div class="booking-history-container flex center">
+                <div class="booking-history-card flex column booking-history-bg ">
+                        <div class="card-info">
+                            <h3>Flight details</h3>
+                            <p>Flight Number: <span id="flightNumber"></span></p>
+                            <p>Departure: <span id="departureAirport"></span></p>
+                            <p>Destination: <span id="arrivalAirport"></span></p>
+                            <p>Date: <span id="departureDate"></span></p>
+                            <p>Departure Time: <span id="departureTime"></span></p>
+                            <p>Arrival Time: <span id="arrivalTime"></span></p>
+                            <p>Price: <span id="price"></span></p>
+                        </div>
+                    <div class="flex">
+                        <img class="star-rating" src="../assets/icons/filled-star.png" alt="">
+                        <img class="star-rating" src="../assets/icons/filled-star.png" alt="">
+                        <img class="star-rating" src="../assets/icons/filled-star.png" alt="">
+                        <img class="star-rating" src="../assets/icons/filled-star.png" alt="">
+                        <img class="star-rating-empty" src="../assets/icons/empty-star.png" alt="">
+                    </div>
+                    <img class="review-icon" src="../assets/icons/review icon.png" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer class="footer flex column gap-10">
+        <div class="footer-top flex row">
+            <img src="../assets/icons/Logo.png" />
+            <div class="footer-links flex row gap-20">
+                <a href="../pages/flights.html">Flights</a>
+                <a href="../pages/flightstracking.html">Flights Tracker</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom flex row">
+            <div class="footer-rights flex row gap-20">
+                <p>© 2024 FlyNow</p>
+                <a href="#">Terms</a>
+                <a href="#">Policy</a>
+            </div>
+
+            <div class="footer-social flex row gap-20">
+                <a href="#"><img src="../assets/icons/facebook.svg" /></a>
+                <a href="#"><img src="../assets/icons/instagram.svg" /></a>
+                <a href="#"><img src="../assets/icons/twitter.svg" /></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/profile.js"></script>
+</body>
+
+</html>

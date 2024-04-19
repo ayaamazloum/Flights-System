@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icons/Vector.png">
+    <link rel="stylesheet" href="../styles/common/utilities.css">
+    <link rel="stylesheet" href="../styles/common/common.css">
+    <link rel="stylesheet" href="../styles/admin.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <header class="header flex row center">
+
+        <div class="adminnav-links flex gap-110">
+            <a class="bold" href="#">Dashboard</a>
+            <a href="./flights-managment.html">Flights Managment</a>
+            <a href="./booking-financial.html">Booking & Financial</a>
+            <a href="./coin-requests.html">Coin Requests</a>
+            <a href="./reviews-ratings.html">Reviews & Ratings</a>
+            <a href="./admin-chat.html">Chats</a>
+            <a class="primary-text" href="#">Logout</a>
+        </div>
+
+        <img class="menu-icon burger" id="open-nav-btn" src="../assets/icons/menu.png"/>
+        <img class="menu-icon close" id="close-nav-btn" src="../assets/icons/close.png"/>
+    </header>
+    <div class="dashboard-container flex column ">
+        <div class="dashboard-child flex row">
+            <h1>Total Bookings</h1> 
+            <h1 id="total-Bookings"></h1> 
+        </div> 
+        <div class="dashboard-child flex row">
+            <h1>Number of users</h1> 
+            <h1 id="num-users"></h1> 
+        </div> 
+
+        <div class="dashboard-child flex row">
+            <h1>Number of Air-planes</h1> 
+            <h1 id="num-planes"></h1> 
+        </div> 
+        <div class="dashboard-child flex row">
+            <h1>Revenue</h1> 
+            <h1 id="revenue"></h1> 
+        </div> 
+
+    </div>
+    <script src="../scripts/adminDashboard.js"></script>
+</body>
+</html>

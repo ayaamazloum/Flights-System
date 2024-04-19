@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlyNow</title>
+    <link rel="icon" href="./assets/icons/Vector.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/common/utilities.css">
+    <link rel="stylesheet" href="./styles/common/common.css">
+    <link rel="stylesheet" href="./styles/home.css">
+</head>
+<body>
+    <header class="header flex row center">
+        <img class="header-logo" src="./assets/icons/Logo.png" alt="FlyNow Logo"/>
+
+        <div class="nav-links flex gap-30" id="nav-links">
+            <a class="bold" href="index.html">Home</a>
+            <a href="./pages/flights.html">Flights</a>
+            <a href="./pages/flightstracking.html">Flights Tracker</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="./pages/profile.html">Profile</a>
+            <a class="primary-text logout" id="logout-btn">Logout</a>
+        </div>
+
+        <img class="menu-icon burger" id="open-nav-btn" src="./assets/icons/menu.png"/>
+        <img class="menu-icon close" id="close-nav-btn" src="./assets/icons/close.png"/>
+    </header>
+
+    <main class="flex column">
+        <section class="hero-section flex row center">
+            <div class="hero-text">
+                <h1 class="mb-20"><span class="primary-text">Book</span> Your Dream <span class="primary-text">Flights</span> Now!</h1>
+                <p class="mb-20">Fly farther for less. Affordable flights to dream destinations.</p>
+                <button class="btn-style-1">Book Now</button>
+            </div>
+            <div class="hero-img">
+                <img src="./assets/images/hero 1.png" alt="Hero Plane Image"/>
+            </div>
+        </section>
+        
+        
+        <section class="flight-search flex row center gap-20">
+            <div class="search-field">
+                <label for="departure">Departure Country</label>
+                <fieldset>
+                    <select name="departure-country" id="departure-country">
+                        <option value="any">Any</option>
+                    </select>
+                    <img class="input-icon" src="./assets/icons/departure.svg"/>
+                </fieldset>
+            </div>
+            
+            <div class="search-field">
+                <label for="destination">Destination Country</label>
+                <fieldset>
+                    <select name="departure-country" id="destination-country">
+                        <option value="any">Any</option>
+                    </select>
+                    <img class="input-icon" src="./assets/icons/destination.svg"/>
+                </fieldset>
+            </div>
+            
+            <div class="search-field">
+                <label for="departure-date">Departure Date</label>
+                <fieldset>
+                    <input class="datepicker" type="date" name="departure-date" id="departure-date"/>
+                    <img class="input-icon" src="./assets/icons/date.svg"/>
+                </fieldset>
+            </div>
+            
+            <div class="search-field">
+                <label for="return-date">Return Date</label>
+                <fieldset>
+                    <input class="datepicker" type="date" name="return-date" id="return-date"/>
+                    <img class="input-icon" src="./assets/icons/date.svg"/>
+                </fieldset>
+            </div>
+            
+            <div class="search-field">
+                <label for="num-passengers">Passengers</label>
+                <fieldset>
+                    <input class="num-input" type="number" name="num-passengers" value="1" id="num-passengers"/>
+                    <img class="input-icon" src="./assets/icons/passenger.svg"/>
+                </fieldset>
+            </div>
+
+            <button class="btn-style-2 search-btn flex row center gap-10" id="search-btn"><img src="./assets/icons/search.svg"/>Find Flights</button>
+        </section>
+
+        <section class="about-section flex row gap-30">
+            <div class="about-img">
+                <img src="./assets/images/about.jpg" />
+                <div class="about-years bold white-text">
+                    <p class="years">25+</p>
+                    <p>Years of Experience</p>
+                </div>
+            </div>
+
+            <div class="about-text flex column gap-20">
+                <div class="section-title">
+                    <span class="line"></span>
+                    <p class="primary-text">ABOUT US</p>
+                </div>
+
+                <h1>WORLD BEST TRAVEL AGENCY COMPANY FOR YOU</h1>
+
+                <p>Explore the world, simply. Our user-friendly flight system empowers you to find the 
+                    perfect flight at the best price.  Book your next adventure with confidence today.</p>
+
+                <div class="flex column gap-10">
+                    <div class="about-list-item flex row">
+                        <img src="./assets/icons/tick.svg"/>
+                        <p>Take a look at our round up of the best shows</p>
+                    </div>
+                    <div class="about-list-item flex row">
+                        <img src="./assets/icons/tick.svg"/>
+                        <p>It has survived not only five centuries</p>
+                    </div>
+                    <div class="about-list-item flex row">
+                        <img src="./assets/icons/tick.svg"/>
+                        <p>A powerful tool for your travel managers</p>
+                    </div>
+                </div>
+
+                <button class="btn-style-1 flex row center gap-10">Discover Now<img src="./assets/icons/arrow-right.svg"/></button>
+            </div>
+        </section>
+
+        <section class="video-section flex center">
+            <div class="layer"></div>
+            <div class="play"><img src="./assets/icons/video-play.svg"></div>
+        </section>
+
+        <section class="top-flights flex column center gap-10">
+            <div class="section-title">
+                <span class="line"></span>
+                <p class="primary-text">Top Tours</p>
+            </div>
+
+            <h1>Top Airlines Tours</h1>
+
+            <p>Save time searching! We curate the best flight options from leading airlines, all in one place.</p>
+
+            <div class="top-flights-container flex row center gap-30" id="top-flights-container">
+            </div>
+        </section>
+
+        <div class="chat-container">
+            <div class="chat-box flex row">
+                <input type="text" class="chat-input" placeholder="Send us a direct message" id="message" />
+                <img class="send-icon" src="./assets/icons/send.svg" id="send-btn" />
+                <img class="chat-icon" src="./assets/icons/chat-box.svg" />
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer flex column gap-10">
+        <div class="footer-top flex row">
+            <img src="./assets/icons/Logo.png" />
+            <div class="footer-links flex row gap-20">
+                <a href="./pages/flights.html">Flights</a>
+                <a href="./pages/flightstracking.html">Flights Tracker</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom flex row">
+            <div class="footer-rights flex row gap-20">
+                <p>© 2024 FlyNow</p>
+                <a href="#">Terms</a>
+                <a href="#">Policy</a>
+            </div>
+
+            <div class="footer-social flex row gap-20">
+                <a href="#"><img src="./assets/icons/facebook.svg" /></a>
+                <a href="#"><img src="./assets/icons/instagram.svg" /></a>
+                <a href="#"><img src="./assets/icons/twitter.svg" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <script src="./scripts/home.js"></script>
+</body>
+</html>

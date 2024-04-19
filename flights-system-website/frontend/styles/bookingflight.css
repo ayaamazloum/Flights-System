@@ -1,0 +1,83 @@
+
+.details {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+
+.card-info {
+    padding: 20px;
+    background-color: #32a7b1;
+    color: white;
+}
+
+.card-info h3 {
+    margin-bottom: 10px;
+}
+
+.card-info p {
+    margin: 5px 0;
+}
+
+.card-info button {
+    padding: 10px 20px;
+    background-color: white;
+    color: #32a7b1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card-info button:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.seat-selection {
+    margin-top: 20px;
+}
+
+.seat-selection h3 {
+    margin-bottom: 10px;
+}
+
+.seats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* display: grid;
+    grid-template-columns: repeat(5, 50px);
+    gap: 10px;  */
+}
+.row{display: flex;
+    gap: 10px;
+}
+.seat {
+    width: 30px;
+    height: 30px;
+    background-color: #32a7b1;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat:hover {
+    background-color: #1e7b84;
+}
+
+.unavailable {
+    background-color: #ccc; 
+    cursor: not-allowed;
+}
+

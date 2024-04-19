@@ -1,0 +1,121 @@
+.profile-section1 {
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.info-section {
+  padding-left: 40px;
+  width: 150px;
+  gap: 15px;
+  flex: 0 0 auto;
+}
+.coin-balance {
+  padding: 10px 20px;
+}
+.coin-request-container{
+    height: 40vh;
+    border-radius: 5px;
+}
+.coin-request-form{
+    width: 30%;
+    height: 100%;
+    background-color: #32a7b1;
+    color: white;
+    gap: 15px;
+    border-radius: 5px;
+}
+.coin-request-ammount{
+    height: 25px;
+    border-radius: 5px;
+}
+.profile-icon {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+.booking-history {
+  width: 100%;
+  flex: 1;
+}
+.booking-history-title{
+    font-size: 20px;
+}
+.booking-history-card {
+  width: 25%;
+  padding: 30px;
+  margin: 20px;
+  color: white;
+  gap: 10px;
+}
+.star-rating {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(300deg);
+}
+.star-rating-empty {
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+  filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(300deg);
+}
+.review-icon{
+        width: 70px;
+        height: 60px;
+        filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(300deg);
+}
+.booking-history-bg {
+  background-image: url(../assets/images/bookingHistoryCard.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.booking-history-container {
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.form1 {
+    background-color: rgba(50, 167, 177, 0.8);
+    width: 90%;
+    max-width: 300px;
+    height: 450px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    box-sizing: border-box;
+  
+    flex: 3;
+    gap: 15px;
+  }
+  .form2 {
+    background-color: rgba(50, 167, 177, 0.8);
+    width: 90%;
+    max-width: 300px;
+    height: 450px;
+    padding: 20px;
+    position: absolute;
+    transform: translate(80%);
+    border-radius: 15px;
+    box-sizing: border-box;
+  
+    flex: 3;
+    gap: 15px;
+  }
+  .form1-1 {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+  }
+  
+.form1-2 {
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+  }

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking flight</title>
+    <link rel="icon" href="../assets/icons/Vector.png">
+    <link rel="stylesheet" href="../styles/common/utilities.css">
+    <link rel="stylesheet" href="../styles/common/common.css">
+    <link rel="stylesheet" href="../styles/bookingflight.css">
+</head>
+<body>
+    <header class="header flex row center">
+        <img class="header-logo" src="../assets/icons/Logo.png" alt="FlyNow Logo"/>
+
+        <div class="nav-links flex gap-30" id="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="../pages/flights.html">Flights</a>
+            <a href="../pages/flightstracking.html">Flights Tracker</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a class="bold" href="../pages/profile.html">Profile</a>
+            <a class="primary-text" id="logout-btn">Logout</a>
+        </div>
+
+        <img class="menu-icon burger" id="open-nav-btn" src="../assets/icons/menu.png"/>
+        <img class="menu-icon close" id="close-nav-btn" src="../assets/icons/close.png"/>
+    </header>
+    <div id="balance" >Account balance: <p id="accountBalance"></p></div>
+    <div class="details flex">
+        <div class="card">
+            <div class="card-info">
+                <h3>Flight details</h3>
+                <p>Flight Number: <span id="flightNumber"></span></p>
+                <p>Departure: <span id="departureAirport"></span></p>
+                <p>Destination: <span id="arrivalAirport"></span></p>
+                <p>Date: <span id="departureDate"></span></p>
+                <p>Departure Time: <span id="departureTime"></span></p>
+                <p>Arrival Time: <span id="arrivalTime"></span></p>
+                <p>Price: <span id="price"></span></p>
+               
+            </div>
+        </div>
+        <div class="seat-selection">
+            <h3>Seat Selection</h3>
+            <div class="seats">
+                
+                <div class="row">
+                    <div class="seat available">1</div>
+                    <div class="seat available">2</div>
+                    <div class="seat available">3</div>
+                    <div class="seat available">4</div>
+                    <div class="seat available">5</div>
+                    <div class="seat available">6</div>
+                </div>
+                <div class="row">
+                    <div class="seat available">7</div>
+                    <div class="seat available">8</div>
+                    <div class="seat available">9</div>
+                    <div class="seat available">10</div>
+                    <div class="seat available">11</div>
+                    <div class="seat available">12</div>
+                </div>
+                <div class="row">
+                    <div class="seat available">13</div>
+                    <div class="seat available">14</div>
+                    <div class="seat available">15</div>
+                    <div class="seat available">16</div>
+                    <div class="seat available">17</div>
+                    <div class="seat available">18</div>
+                </div>
+                <div class="row">
+                    <div class="seat available">19</div>
+                    <div class="seat unavailable">20</div>
+                    <div class="seat unavailable">21</div>
+                    <div class="seat unavailable">22</div>
+                    <div class="seat unavailable">23</div>
+                    <div class="seat unavailable">24</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="flex center gap-20" >
+    <button id="bookNowBtn" class="btn-style-1 flex center gap-20 " >Book Now</button>
+</div>
+    <footer class="footer flex column gap-10">
+        <div class="footer-top flex row">
+            <img src="../assets/icons/Logo.png" />
+            <div class="footer-links flex row gap-20">
+                <a href="../pages/flights.html">Flights</a>
+                <a href="../pages/flightstracking.html">Flights Tracker</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom flex row">
+            <div class="footer-rights flex row gap-20">
+                <p>© 2024 FlyNow</p>
+                <a href="#">Terms</a>
+                <a href="#">Policy</a>
+            </div>
+
+            <div class="footer-social flex row gap-20">
+                <a href="#"><img src="../assets/icons/facebook.svg" /></a>
+                <a href="#"><img src="../assets/icons/instagram.svg" /></a>
+                <a href="#"><img src="../assets/icons/twitter.svg" /></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/bookingflight.js"></script>
+</body>
+</html>
